@@ -1,0 +1,97 @@
+@import url('/assets/css/font.css');
+ :root {
+    /* Colors */
+    --dark-Blue: hsl(248, 91%, 13%);
+    --purple: hsl(265, 76%, 48%);
+    --bright-Cyan: hsl(180, 96%, 48%);
+    --grayish-Blue: hsl(233, 8%, 62%);
+    --light-Grayish-Blue: hsl(220, 16%, 96%);
+    --very-Light-Gray: hsl(0, 0%, 98%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.125rem;
+    color: var(--white);
+    line-height: 1.3;
+}
+
+a,
+a:visited,
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Spacing  */
+
+.container {
+    max-width: 69.375rem;
+    margin: 0 auto;
+}
+
+.container--pall {
+    padding-top: 4.375rem;
+    padding-right: 1.5rem;
+    padding-bottom: 4.375rem;
+    padding-left: 1.5rem;
+}
+
+.container--py {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+}
+
+.container--px {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.container--pt {
+    padding-top: 4.375rem;
+}
+
+.container--pr {
+    padding-right: 1.5rem;
+}
+
+.container--pb {
+    padding-bottom: 4.375rem;
+}
+
+.container--pl {
+    padding-left: 1.5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-jc-r {
+    justify-content: baseline;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-jc-c {
+    justify-content: center;
+}
+
+.flex-ai-c {
+    align-items: center;
+}

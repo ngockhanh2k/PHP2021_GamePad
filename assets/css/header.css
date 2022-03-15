@@ -1,0 +1,114 @@
+@import url('/assets/css/base.css');
+.header {
+    background: var(--dark-Blue);
+}
+
+.header nav {
+    padding: 1rem 0;
+}
+
+
+/* LOGO */
+
+.header__logo {
+    font-size: 1.625rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.header__logo img {
+    width: 2.8325rem;
+    height: 2.8325rem;
+    margin-right: 0.625rem;
+}
+
+
+/* END LOGO */
+
+
+/* MENU CONTENT TABS */
+
+.header__links ul {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+
+ul li:not(:last-child) {
+    margin-right: 0.2875rem;
+}
+
+.header a {
+    color: var(--white);
+}
+
+.content li {
+    margin-left: 2.71875rem;
+    margin-right: 2.71875rem;
+}
+
+.header__links__item {
+    text-transform: uppercase;
+}
+
+.header__links__item a {
+    position: relative;
+    transition: color 300ms ease-in-out;
+}
+
+.header__links__item a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    left: -20px;
+    right: -20px;
+    bottom: -26px;
+    background: var(--white);
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.header__links__item a:hover {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--bright-Cyan);
+}
+
+.header__links__item a:hover::before {
+    opacity: 1;
+}
+
+
+/* MENU ICONS ACCOUNTS, SHOPPING, SEARCH */
+
+.header__links__item i:not(:last-child) {
+    margin-right: 1.1875rem;
+}
+
+.icon {
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+
+/* MENU SHOP DROP DOWN */
+
+.header__links .header__links__list .header__links__item ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+}
+
+.header__links .content .header__links__item:hover>ul {
+    display: block;
+}
+
+.header__links .header__links__item .header__links__list-product li {
+    width: 100px;
+    position: relative;
+    border: 1px solid var(--white);
+}
