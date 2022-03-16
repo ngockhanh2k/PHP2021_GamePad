@@ -62,3 +62,19 @@ input[name="bottom"] {
     height: 100%;
     width: 100%;
 }
+
+#bottom_1:checked~.s1 {
+    margin-left: 0;
+}
+
+#bottom_2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#bottom_3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#bottom_4:checked~.s1 {
+    margin-left: -60%;
+}
